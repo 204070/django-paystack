@@ -3,6 +3,8 @@ from django.conf.urls import url
 
 from . import settings
 from . import views
+
+app_name = 'paystack'
 urlpatterns = [
     url(r'^verify-payment/(?P<order>[\w.@+-]+)/$',
         views.verify_payment, name='verify_payment'),
